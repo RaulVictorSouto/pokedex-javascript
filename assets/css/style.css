@@ -1,0 +1,60 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+h1{
+    font-size: 3rem;
+    padding: 0;
+}
+  
+  /* Estilos para a barra de navegação */
+  .nav {
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #1F4C73;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
