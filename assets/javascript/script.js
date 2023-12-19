@@ -50,7 +50,7 @@ let limit = 1010;
           fairy: '#EE99AC',
         };
       
-        return colors[type.toLowerCase()] || '#777'; // Cor padrão para tipos desconhecidos
+        return colors[type.toLowerCase()] || '#777'; 
       }
       
 
@@ -59,7 +59,7 @@ let limit = 1010;
         const data = await response.json();
       
         const pokeListElement = document.getElementById('pokeList');
-        pokeListElement.innerHTML = ''; // Limpa a lista antes de adicionar novos Pokémons
+        pokeListElement.innerHTML = ''; 
       
         data.results.forEach(async pokemon => {
           const pokemonData = await fetch(pokemon.url).then(res => res.json());
@@ -68,7 +68,7 @@ let limit = 1010;
           const card = document.createElement('div');
           card.classList.add('card', 'col-lg-4', 'col-md-6', 'mb-4');
       
-          // Aplica a cor da borda com base no tipo do Pokémon
+          
           const borderColor = pokemonData.types.length > 0 ? getColorByType(pokemonData.types[0].type.name) : '#777';
           card.style.borderColor = borderColor;
       
